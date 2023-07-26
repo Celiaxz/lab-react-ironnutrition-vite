@@ -70,7 +70,6 @@
 //     </form>
 //   );
 // }
-
 // export default AddFoodForm;
 
 import { useState } from "react";
@@ -80,9 +79,7 @@ function AddFoodForm({ onAdd }) {
   const [form] = Form.useForm();
 
   const handleSubmit = (values) => {
-    // Call the onAdd function with the form values
     onAdd(values);
-    // Reset the form fields after submitting
     form.resetFields();
   };
 
