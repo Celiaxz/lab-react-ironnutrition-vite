@@ -3,7 +3,12 @@ function FoodBox({ food, clickDeleteButton }) {
   const { id, name, calories, image, servings } = food;
   const totalCalories = servings * calories;
   console.log("Image:", image);
-
+  //define function clickDeletebutton (matches prop name in App)
+  // extract id from food prop
+  //when delete button is clicked function deleteButton is called
+  //at the same time it also calls the clickDeleteButton which is passed from App
+  // which has the id of a particluar food item
+  //then it triggers it to remove the food array in the app component
   const deleteButton = () => {
     clickDeleteButton(id);
   };
